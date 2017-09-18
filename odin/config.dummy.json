@@ -1,0 +1,21 @@
+{
+	"iot": {
+		"endpoint": "<iotendpoint>",
+		"region": "us-east-1",
+        "topic":"heimdall"
+	},
+    "mode":{
+        "all":1,
+        "bifrost":2,
+        "countdown":3,
+        "stopwatch":4,
+        "weather":5,
+        "text":6,
+        "ragnarok":7
+    },
+    "intent":{
+        "open":1,
+        "close":2,
+        "poke":3
+    }
+}

@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("fonts/sanfranciscodisplay-thin-webfont.woff");
+}
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 300;
+  src: url("fonts/sanfranciscodisplay-regular-webfont.woff");
+}
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("fonts/sanfranciscodisplay-medium-webfont.woff");
+}
+body
+{
+    background-color: black;
+    font-family: 'San Francisco', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    padding: 30px;
+    margin:5px;
+}
+
+.super
+{
+    font-size:18px;
+    font-variant:small-caps;
+}
+
+hr
+{
+  border: 0;            
+  height: 1px;
+  background-color: #B9B9B9;
+}
+
+.faded
+{
+    color: #B9B9B9;
+}
+
+.shout{
+    font-weight: 400;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.spotlight
+{
+    text-align: center;
+}
+
+/** Status **/
+
+.status
+{
+    font-size: 10px;
+}
+
+.ball 
+{
+   float: left;
+   border-radius: 50%;
+   width: 10px;
+   height: 10px;
+   margin: 2px;
+}
+
+.online
+{
+    background: green;
+}
+
+.offline
+{
+    background: darkred;
+}
+
+/**Date Time*/
+.date
+{
+    text-align: right;
+    font-size: 20px;
+}
+.time
+{
+    text-align: right;
+    line-height: 1.15;
+    font-size: 96px;
+    font-weight: 300;
+}
+
+
+/**Weather*/
+.weather-now .temperature{
+    font-size: 64px;
+    vertical-align: top;
+}
+.weather-now i{
+    font-size: 96px;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+.weather-now {
+    display: inline-block;
+    width: 1em;
+}
+.weather-now .summary{
+    vertical-align: top;
+    font-size: 20px;
+}
+
+.weather-hour{
+    padding-left: 0;
+    display: inline-block;
+    width: 3em;
+}
+.weather-hour p{
+    margin: 0px;
+}
+.weather-hour .hour{
+    font-size: 14px;
+}
+
+.weather-week .day,.weather-week i{
+    display: inline-block;
+    width: 4.5em;
+}
+.weather-week .temperature
+{
+    display: inline-block;
+    padding-right: 1em;
+}
+
+
+/** Calendar- meddling with pig nose?*/
+
+.pignose-calendar
+{
+    border:none;
+    background-color: black;
+    width:100%;
+}
+
+.pignose-calendar-unit a
+{
+    color: white !important;
+    height: 1.9em;
+    width: 1.9em;
+    line-height: 1.9em;
+}
+
+.pignose-calendar-unit-sat a, 
+.pignose-calendar-unit-sun a,
+.pignose-calendar-week-sat,
+.pignose-calendar-week-sun
+{
+    color:#B9B9B9 !important;
+}
+
+.pignose-calendar-unit
+{
+    height:2.4em;
+}
+
+.pignose-calendar .pignose-calendar-body{
+    padding-top: 0.1em;
+}
+
+/**Stowatch + Countdown*/
+
+.timer
+{
+    text-align: center;
+    font-size: 72px;
+    border: 2px solid #B9B9B9;          
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
+.timer .minutes,
+.timer .seconds,
+.timer .millis
+{
+    display: inline-block;
+    width:1.2em;
+    padding-top: 40px;
+}
+
+.timer .message
+{
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.timer .millis
+{
+    width:0.9em;
+}
+
+
+
+
+

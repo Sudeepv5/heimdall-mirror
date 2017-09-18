@@ -1,0 +1,24 @@
+{
+  "name": "heimdall",
+  "description": "open the bifrost!",
+  "main": "horn.js",
+  "authors": [
+    "Sudeep Vaka"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "bootstrap": "v4.0.0-alpha.6",
+    "moment": "^2.18.1",
+    "pg-calendar": "latest",
+    "angular-ui-calendar": "latest",
+    "weather-icons": "^2.0.10"
+  }
+}

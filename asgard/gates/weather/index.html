@@ -1,0 +1,31 @@
+<div class="weather" ng-controller="WeatherCtrl">
+    <div ng-hide="weather.error">
+        <div class="weather-now">
+            <span class="temperature">{{weather.now.temperature}}&deg;</span>
+            <i class="wi wi-forecast-io-{{weather.now.icon}}"></i>
+            <p class="summary faded">{{weather.now.summary}}</p>
+        </div>
+        <hr>
+        <div class="weather-hour col" ng-repeat="hourly in weather.hourly">
+            <span class="hour">{{hourly.time}}</span>
+            <i class="wi wi-forecast-io-{{hourly.icon}}"></i>
+            <p class="temperature">{{hourly.temperature}}&deg;</p>
+        </div>
+        <hr>
+        <div class="weather-week" ng-repeat="daily in weather.daily">
+            <span class="day">{{daily.time}}</span>
+            <i class="wi wi-forecast-io-{{daily.icon}}"></i>
+            <span class="temperature">{{daily.temperatureMax}}&deg;</span>
+            <span class="temperature faded">{{daily.temperatureMin}}&deg;</span>
+        </div>
+        <br>
+        <div class="status faded">
+            <div ng-if="stale.weather < 1">last updated less than a minute ago</div>
+            <div ng-if="stale.weather == 1">last updated 1 minute ago</div>
+            <div ng-if="stale.weather >= 2">last updated {{stale.weather}} minutes ago</div>
+        </div>
+    </div>
+    <div ng-show="weather.error">
+        <span>Error</span>
+    </div>
+</div>

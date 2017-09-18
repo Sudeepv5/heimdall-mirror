@@ -1,0 +1,9 @@
+node_modules
+npm-debug.log
+.DS_Store
+asgard/bower_components
+asgard/config.json
+odin/config.json
+util
+keys
+*.zip

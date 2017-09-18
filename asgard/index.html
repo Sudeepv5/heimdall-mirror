@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Heimdall</title>
+    <!--3P Pack-->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="bower_components/pg-calendar/dist/css/pignose.calendar.min.css" rel="stylesheet"/>
+    <link href="bower_components/weather-icons/css/weather-icons.min.css" rel="stylesheet"/>
+    <link href="sif/style.css" rel="stylesheet" type="text/css">  
+
+    <!--electron script load error workaround-->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+    <script src="bower_components/pg-calendar/dist/js/pignose.calendar.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body ng-app="heimdall" ng-controller="BifrostCtrl">
+    
+    <div class="row">
+        <gate class="col-md-3" name="weather"></gate>
+        <div class="col-md-3 offset-md-6">
+            <gate name="datetime"></gate>
+            <gate name="calendar"></gate>
+        </div>
+    </div>
+    <div class="row spotlight">
+        <div class="col-md-3">
+            <gate name="countdown"></gate>
+        </div>
+        <div class="col-md-6">
+            <!--other on demand gates-->
+        </div>
+        <div class="col-md-3">
+            <gate name="stopwatch"></gate>
+        </div>
+    </div>
+
+    <gate name="status"></gate>
+    
+    <!--App-->
+    <script src="bifrost/app.js"></script>
+    <script src="bifrost/factory.js"></script>
+    <script src="bifrost/controller.js"></script>
+    <script src="bifrost/gate-directive.js"></script>
+    
+    <!--Gate controllers-->
+    <script src="gates/calendar/controller.js"></script>
+    <script src="gates/weather/controller.js"></script>
+    <script src="gates/stopwatch/controller.js"></script>
+    <script src="gates/countdown/controller.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+{
+	"server": {
+		"port": 4000,
+		"page": "/index.html"
+	},
+	"weather": {
+		"interval": 10,
+		"api": {
+			"host": "api.darksky.net",
+			"path": "/forecast/",
+			"key": "<darkskyapikey>"
+		},
+		"location": {
+			"latitude": "<lat>",
+			"longitude": "<long>",
+			"city": "Seattle",
+			"state": "WA",
+			"zip": 98104
+		},
+		"units": "si"
+	},
+	"iot": {
+		"endpoint" : "<iotendpoint>",
+		"region" : "us-east-1",
+        "key" : "privatekeypath",
+		"cert" : "certpath",
+        "ca" : "capath",
+		"topic" : "heimdall",
+		"mode":{
+			"1" : "all",
+			"2" : "bifrost",
+			"3" : "countdown",
+			"4" : "stopwatch",
+			"5" : "weather",
+			"6" : "text",
+			"7" : "ragnarok"
+		},
+		"intent":{
+			"1" : "open",
+			"2" : "close",
+			"3" : "poke"
+		}
+	},
+	"countdown": {
+		"minute": 600,
+		"spawn": 50,
+		"work": 500,
+		"rest": 100
+	},
+	"bifrost":{
+		"sleep":10
+	},
+	"soul":{
+		"pin":7
+	}
+}

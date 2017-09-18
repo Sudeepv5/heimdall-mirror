@@ -1,0 +1,20 @@
+{
+  "name": "heimdall",
+  "version": "1.0.0",
+  "description": "open the bifrost!",
+  "main": "heimdall.js",
+  "scripts": {
+    "start": "electron heimdall.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sudeep Vaka",
+  "license": "MIT",
+  "dependencies": {
+    "aws-iot-device-sdk": "*",
+    "bower": "^1.8.0",
+    "express": "*",
+    "opn": "^5.1.0",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {}
+}
