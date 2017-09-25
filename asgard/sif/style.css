@@ -19,7 +19,7 @@ body
     font-family: 'San Francisco', sans-serif;
     font-weight: 300;
     color: #fff;
-    padding: 30px;
+    padding:25px;
     margin:5px;
 }
 
@@ -116,7 +116,7 @@ hr
 .weather-hour{
     padding-left: 0;
     display: inline-block;
-    width: 3em;
+    width: 2.7em;
 }
 .weather-hour p{
     margin: 0px;
@@ -148,9 +148,14 @@ hr
 .pignose-calendar-unit a
 {
     color: white !important;
-    height: 1.9em;
-    width: 1.9em;
-    line-height: 1.9em;
+    height: 1.8em !important;
+    width: 1.8em !important;
+    line-height: 1.8em !important;
+}
+
+.pignose-calendar-unit.pignose-calendar-unit-active a {
+    background-color: #d1933c !important;
+    color: black !important;
 }
 
 .pignose-calendar-unit-sat a, 

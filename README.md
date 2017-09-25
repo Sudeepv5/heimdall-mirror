@@ -1,22 +1,31 @@
+![Heimdall, Open the bifrost!](https://github.com/sudeepv5/heimdall-mirror/master/asgard/sif/words.png "*thunders*")
+
+----
+## Project Heimdall
+
+Alexa controlled smart mirror
+
+
 #### heimdall
-~keeper of gates
+`~keeper of gates`
 
-~listener of events
+`~listener of events`
 
-~user of horn
+`~user of horn`
 
-~opener of portal
+`~opener of portal`
 
 
 #### asgard
-~a place for the gates
+`~a place for the gates`
 
-~accessed and controlled via bifrost
+`~accessed and controlled via bifrost`
 
 
 #### odin
-~whisperer of intents 
+`~whisperer of intents `
 
-~aquaintance of alexa
+`~aquaintance of alexa`
 
-~dweller of the clouds
+`~dweller of the clouds`
+

@@ -19,7 +19,7 @@
     <script src="/socket.io/socket.io.js"></script>
 </head>
 <body ng-app="heimdall" ng-controller="BifrostCtrl">
-    
+    <gate name="status"></gate>
     <div class="row">
         <gate class="col-md-3" name="weather"></gate>
         <div class="col-md-3 offset-md-6">
@@ -38,8 +38,6 @@
             <gate name="stopwatch"></gate>
         </div>
     </div>
-
-    <gate name="status"></gate>
     
     <!--App-->
     <script src="bifrost/app.js"></script>

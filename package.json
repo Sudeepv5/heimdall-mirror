@@ -4,7 +4,7 @@
   "description": "open the bifrost!",
   "main": "heimdall.js",
   "scripts": {
-    "start": "electron heimdall.js "
+    "start": "electron heimdall.js"
   },
   "author": "Sudeep Vaka",
   "license": "MIT",
