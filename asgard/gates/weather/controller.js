@@ -1,8 +1,8 @@
 (function(angular){
     'use strict';
-    angular.module('heimdall').controller('WeatherCtrl', ['$scope', '$rootScope', '$http', '$interval', WeatherCtrl]);
+    angular.module('heimdall').controller('WeatherCtrl', ['$scope', '$rootScope', '$http', '$interval', 'socketio', WeatherCtrl]);
 
-    function WeatherCtrl($scope, $rootScope, $http, $interval){
+    function WeatherCtrl($scope, $rootScope, $http, $interval, socketio){
         $scope.weather = {}
         var forecast = {};
         var config = $rootScope.config;
@@ -63,6 +63,10 @@
         }
 
         forecast.refresh();
+
+        socketio.on('poke:weather', function(d){
+            forecast.refresh();
+        });
     }
 
 })(window.angular);

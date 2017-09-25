@@ -19,7 +19,7 @@ app.get('/',function(req, res){
 
 //all misc
 require('./horn')(config, io);
-opn('http://localhost:'+config.server.port);
+require('./portal')(config, process.argv);
 
 
 

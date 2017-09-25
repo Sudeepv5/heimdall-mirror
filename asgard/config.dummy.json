@@ -43,7 +43,7 @@
 	},
 	"countdown": {
 		"minute": 600,
-		"spawn": 50,
+		"spawn": 5,
 		"work": 500,
 		"rest": 100
 	},
